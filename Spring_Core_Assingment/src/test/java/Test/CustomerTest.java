@@ -10,6 +10,7 @@ public class CustomerTest {
 
 	@Test
 	public void test() {
+		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
 		Customer cust = (Customer)context.getBean("customer101");
 		
