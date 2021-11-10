@@ -99,5 +99,6 @@
 	<classpathentry kind="lib" path="C:/Users/AKLUHADI/Downloads/spring-5.2.9.RELEASE-dist/spring-framework-5.2.9.RELEASE/libs/spring-websocket-5.2.9.RELEASE-javadoc.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AKLUHADI/Downloads/spring-5.2.9.RELEASE-dist/spring-framework-5.2.9.RELEASE/libs/spring-websocket-5.2.9.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="C:/Users/AKLUHADI/Downloads/jar_files/commons-logging-1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

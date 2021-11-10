@@ -5,7 +5,15 @@ public class Customer {
 	private int customer_id;  
 	private String customer_name;  
 	private Address customer_address;
-	private int customer_contact;
+	private long customer_contact;
+	
+	public Customer(int customerId, String customerName, long customerContact, Address customerAddress) {
+		super();
+		this.customer_id = customerId;
+		this.customer_name = customerName;
+		this.customer_contact = customerContact;
+		this.customer_address = customerAddress;
+	}
 	public int getCustomer_id() {
 		return customer_id;
 	}
@@ -24,11 +32,15 @@ public class Customer {
 	public void setCustomer_address(Address customer_address) {
 		this.customer_address = customer_address;
 	}
-	public int getCustomer_contact() {
+	public long getCustomer_contact() {
 		return customer_contact;
 	}
 	public void setCustomer_contact(int customer_contact) {
 		this.customer_contact = customer_contact;
+	}
+	
+	public void displayCustomer() {
+		System.out.println("Customer Id : " + customer_id + " customer Name: " + customer_name + " Customer contact : " + customer_contact + " Customer Address: " + customer_address);
 	}
 	
 	

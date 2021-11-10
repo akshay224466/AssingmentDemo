@@ -3,8 +3,10 @@ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+<!-- using setter injection
+
 <bean id="address101" class="Test.Address">  
-<property name="street" value="Gitabhavan Square"></property>  
+<property name="street" value="Gitabhavan_Square"></property>  
 <property name="city" value="Indore"></property>  
 <property name="state" value="MP"></property>  
 <property name="country" value="India"></property>  
@@ -13,10 +15,28 @@ http://www.springframework.org/schema/beans/spring-beans.xsd">
   
 <bean id="obj" class="Test.Customer">  
 <property name="customer_id" value="101"></property>  
-<property name="customer_name" value="Sachin _Tendulkar"></property>  
-<property name="customer_contact" value="89"></property>  
+<property name="customer_name" value="Sachin_Tendulkar"></property>  
+<property name="customer_contact" value="8989898989L"></property>  
 <property name="customer_address" ref="address101"></property>  
-</bean>  
+</bean>  -->
+
+
+	<!-- using constructor injection -->
+	
+	<bean id="customer101" class="Test.Customer">  
+		<constructor-arg index="0" value="101"/>
+		<constructor-arg index="1" value="Sachin_Tendulkar"/>
+		<constructor-arg index="2" value="8989898989"/>
+		<constructor-arg index="3" ref="address101"/>  
+	</bean>  
+	
+	<bean id="address101" class="Test.Address">  
+		<constructor-arg index="0" value="Gitabhavan_Square"/>
+		<constructor-arg index="1" value="Indore"/>
+		<constructor-arg index="2" value="MP"/>
+		<constructor-arg index="3" value="202020"/>
+		<constructor-arg index="4" value="India"/>  
+	</bean>  
 
 
 </beans> 

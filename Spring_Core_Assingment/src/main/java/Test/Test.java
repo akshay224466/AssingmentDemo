@@ -6,13 +6,13 @@ public class Test {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
+		
+		//using setter injection
 		ApplicationContext context = new ClassPathXmlApplicationContext("bean.xml");
-		Customer cust = (Customer) context.getBean("obj");
+	//	Customer cuts = (Customer) context.getBean("obj");
 		 
-	    System.out.println(cust.getCustomer_id());
-	    System.out.println(cust.getCustomer_name());
-	    System.out.println(cust.getCustomer_address());
-	    System.out.println(cust.getCustomer_contact());
+		Customer customer2 = (Customer)context.getBean("customer101");
+		customer2.displayCustomer();
 	    
 
 	}
