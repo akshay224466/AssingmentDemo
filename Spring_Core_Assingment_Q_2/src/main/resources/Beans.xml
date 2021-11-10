@@ -1,0 +1,32 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd">
+           
+           <bean id="question" class="Test.Question">  
+			<constructor-arg index="0" value="1"/>  
+			<constructor-arg index="1" value=" What is Spring ? "></constructor-arg>  
+			<constructor-arg index="2">  
+			<list>  
+			 <value>It is a lightweight, loosely coupled and integrated framework for developing enterprise applications in java.</value>
+			 <value>It is a lightweight, loosely coupled and integrated framework for developing enterprise applications in java.</value>
+			</list>  
+			</constructor-arg> 
+			
+			<constructor-arg index="3">  
+			<set>  
+			 <value>It is a lightweight, loosely coupled and integrated framework for developing enterprise applications in java.</value>
+			 <value>It is a lightweight, loosely coupled and integrated framework for developing enterprise applications in java.</value>
+			</set>  
+			</constructor-arg> 
+			
+			<constructor-arg index="4">  
+			<map>  
+			<entry key="1"  value="It is a lightweight, loosely coupled and integrated framework for developing enterprise applications in java."></entry>  
+			<entry key="2" value="It is a lightweight, loosely coupled and integrated framework for developing enterprise applications in java."></entry>  
+			</map>  
+			</constructor-arg>  
+			 
+			</bean>   
+           
+</beans>
