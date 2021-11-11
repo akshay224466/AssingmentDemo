@@ -8,10 +8,10 @@ public class Test {
 	public static void main(String[] args) {
 		 
 		context = new ClassPathXmlApplicationContext("bean.xml");
-		BankAccount account = (BankAccount)context.getBean("Account");
-		System.out.println(account.account_Balance);
-		BankAccountcontroller account2 = (BankAccountcontroller)context.getBean("controller");
-		System.out.println(account2.getBalance(10));
+		BankAccount account101 = (BankAccount)context.getBean("Account");
+		System.out.println(account101.account_Balance);
+		BankAccountcontroller account201 = (BankAccountcontroller)context.getBean("controller");
+		System.out.println(account201.getBalance(10));
 	}
 
 }
