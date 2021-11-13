@@ -27,7 +27,7 @@
     
   </dependencies>
   <build>
-    <finalName>mvc1</finalName>
+    <finalName>Spring_MVC_Assingment_Q1</finalName>
     <plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

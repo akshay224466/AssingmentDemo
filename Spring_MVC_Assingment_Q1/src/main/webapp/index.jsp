@@ -1,10 +1,9 @@
 <html>
 <body>
 <h2>Hello World!</h2>
-<form action="add">
-<input type="text" name="t1">
-<input type="text" name="t1">
-<input type="submit">
-</form>
+<h1>Hyperlink</h1>
+     
+     <a href="<%=request.getContextPath() %>/add">Name</a>
+
 </body>
 </html>

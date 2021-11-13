@@ -7,6 +7,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>Akshay_Luhadiya</h1>
+<h1>Login Page</h1>
+ 
+<form action="/login" method="POST">
+		Name :      <input name="name" type="text" /><br>
+		Password : <input name="password" type="password"/> 
+		 <input type="submit" />
+	</form>
 </body>
 </html>
