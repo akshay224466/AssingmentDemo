@@ -1,0 +1,21 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+
+<bean id="mycompany" class="Test.Company">
+<property name="cmp_Name" value="Google Pvt.Ltd"/>
+<property name="cmp_Location" value="India"/>
+</bean>
+
+<bean id="myemployee" class="Test.Employee">
+<property name="Emp_Id" value="101"/>
+<property name="Emp_Name" value="Akshay_Luhadiya"/>
+</bean>
+
+
+
+
+</beans>
