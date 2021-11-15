@@ -1,9 +1,4 @@
 package First;
-import static org.junit.jupiter.api.Assertions.*;
-
-import java.util.Arrays;
-
-import org.junit.jupiter.api.Test;
 
 public class Dummys {
 	
