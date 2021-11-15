@@ -10,7 +10,7 @@ public class testes {
 	
 public static void main(String[] args) throws IOException {
 		
-		var path = "C:\\Users\\nkawadka\\git\\repository\\JavaAssignmenta\\Assignments\\src\\Java_11_4\\StudentList.txt";
+		var path = "C:\\New folder (2)\\Java11Assignments_StudentList.txt";
 		
 		 List<String> str = Files.readAllLines(Path.of(path));
 		 
