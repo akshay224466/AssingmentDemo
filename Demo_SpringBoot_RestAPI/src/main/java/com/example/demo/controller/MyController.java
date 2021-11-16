@@ -29,7 +29,7 @@ public class MyController {
 		
 	}
 	
-	@GetMapping("/course/{courseId}")
+	@GetMapping("/courses/{courseId}")
 	public Course getCourse(@PathVariable String courseId){
 		return this.controlservice.getCourse(Long.parseLong(courseId));
 		
